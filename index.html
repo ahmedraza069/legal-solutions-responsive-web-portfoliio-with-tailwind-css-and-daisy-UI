@@ -11,6 +11,8 @@
     <!-- Tailwind and Daisy Khala cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awsome -->
+    <script src="https://kit.fontawesome.com/29beee64c9.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,9 +32,80 @@
 </head>
 
 <body>
-    <header>
-        <h1>hello world</h1>
-    </header>
+   <header class="max-w-screen-xl mx-auto p-3 md:p-4 lg:p-4 " >
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <i class="text-2xl mr-10 font-bold fa-solid fa-bars"></i>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li>
+                <a>Services</a>
+                <ul class="p-2">
+                  <li><a>Services 1</a></li>
+                  <li><a>Services 2</a></li>
+                </ul>
+              </li>
+              <li>
+                <a>Blog</a>
+                <ul class="p-2">
+                  <li><a>Blog 1</a></li>
+                  <li><a>Blog 2</a></li>
+                </ul>
+              </li>
+              <li>
+                <a>Contact Us</a>
+                <ul class="p-2">
+                  <li><a>Contact 1</a></li>
+                  <li><a>Contact 2</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </div>
+          <a><img src="./images/logo2.png" alt="" srcset=""></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li tabindex="0">
+              <details>
+                <summary>Services</summary>
+                <ul class="p-2">
+                  <li><a>Services 1</a></li>
+                  <li><a>Services 2</a></li>
+                </ul>
+              </details>
+            </li>
+            <li tabindex="0">
+              <details>
+                <summary>Blog</summary>
+                <ul class="p-2">
+                  <li><a>Blog 1</a></li>
+                  <li><a>Blog 2</a></li>
+                </ul>
+              </details>
+            </li>
+            <li tabindex="0">
+              <details>
+                <summary>Contact Us</summary>
+                <ul class="p-2">
+                  <li><a>Contact 1</a></li>
+                  <li><a>Contact 2</a></li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end ">
+          <a class="btn text-white bg-[#B68C5A]">Free Consultation</a>
+        </div>
+      </div>
+   </header>
+      
+  
 </body>
 
 </html>
